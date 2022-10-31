@@ -1,0 +1,21 @@
+.menu{
+    margin: 10px 15px ;
+    background-color: aqua;
+    width: 30px;
+    height: 30px;
+    padding: 1px;
+}
+
+.ham{
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 5px 0;
+    
+}
+.logo{
+    display: flex;
+    width: 150px;
+    height: 55px;
+    background-color: blue;
+}
