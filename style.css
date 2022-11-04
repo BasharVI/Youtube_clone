@@ -9,3 +9,207 @@ a{
 img{
     cursor: pointer;
 }
+
+
+
+/*--------------------------------Header Section--------------------------------------*/
+
+nav{
+    background: #fff;
+    height: 55px;
+    position:sticky;
+    top: 0;
+    z-index: 10;
+}
+.flex-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+.nav-start{
+    margin-left :15px ;
+}
+.nav-start .menu{
+    width: 20px;
+    margin-right: 25px;
+}
+.nav-start .logo{
+    width: 100px;
+    height: 25px;
+}
+.nav-middle{
+    margin-left: 30px;
+
+}
+.nav-middle .search-box{
+    display: flex;
+    align-items: center;
+}
+.nav-middle .mic{
+    width: 30px;
+    margin-left: 20px;
+    border-radius: 50%;
+    background-color: rgb(215, 215, 217);
+}
+.nav-middle button{
+    height: 32px;
+    width: 50px;
+    border: 1px solid rgb(171, 171, 173);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.nav-middle button:hover{
+    background-color: rgb(148, 149, 149);
+}
+.nav-middle .Search-icon{
+    width: 20px;
+    padding: 5px;
+}
+.search-box{
+    height: 30px;
+    border: 1px solid rgb(171, 171, 173);
+    border-top-left-radius: 15px ;
+    border-bottom-left-radius: 15px ;
+}
+.search-box img{
+    width: 15px;
+    display: none;
+}
+.search-box input{
+    width: 450px;
+    height: 25px;
+    padding-left :10px ;
+    margin-left: 10px;
+    border: 0;
+    outline: 0;
+}
+.nav-end{
+    margin-right: 15px;
+}
+.nav-end .more{
+    margin-right: 35px;
+    border-radius: 50%;
+}
+.nav-end img{
+    width:25px;
+    margin-right: 5px;
+    
+}
+.nav-end a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 30px;
+    border: 1px solid;
+    border-color: rgb(171, 171, 173);
+    box-shadow: none;
+    border-radius: 15px;
+    color: blue;
+}
+.nav-end a:hover{
+    background: rgb(188, 244, 241);
+}
+
+
+/*----------------------------------SideBar Section------------------------------*/
+
+.sidebar{
+    width: 15%;
+    height: 90vh;
+    position: fixed;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.sidebar::-webkit-scrollbar{
+    width: 8px;
+}
+.sidebar::-webkit-scrollbar-thumb{
+    width: 8px;
+    border-radius: 4px;
+}
+.sidebar::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+.sidebar:hover::-webkit-scrollbar-thumb{
+    background-color: rgb(116, 118, 117);
+}
+
+.sidebar a{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: fit-content;
+    margin: 20px 15px;
+}
+.sidebar a img{
+    width: 20px;
+}
+.sidebar a p{
+    color: black;
+    padding-left: 20px;
+    padding-top: 5px;
+}
+.sidebar .sign-side{
+    margin-left: 15px;
+    margin-top: 15px;
+}
+.sidebar .sign-side a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 30px;
+    border: 1px solid;
+    border-color: rgb(171, 171, 173);
+    box-shadow: none;
+    border-radius: 15px;
+    color: blue;
+}
+.sidebar .sign-side a:hover{
+    background: rgb(188, 244, 241);
+}
+.sidebar .sign-side a p{
+    color: blue;
+    padding-left: 5px;
+}
+.sidebar hr{
+    width: 100%;
+    height: 0;
+    color: rgba(225, 228, 231, 0.973);
+}
+.sidebar h3{
+    margin-top: 10px;
+    margin-left: 15px;
+}
+.sidebar .endlinks{
+    margin-top: 10px;
+    margin-left: 15px;
+}
+.sidebar .endlinks p{
+    font-size: small;
+}
+
+/*--------------------------------Main Section--------------------------------*/
+
+.category{
+    margin-left: 15%;
+    width: 85%;
+}
+.category button{
+    margin: 15px 9px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+.banner{
+    margin-left:15% ;
+    width: 85%;
+}
+.banner img{
+    padding: 10px;
+    width: 98%;
+    border-radius: 30px;
+}
