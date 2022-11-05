@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    
+    font-family: Arial, Helvetica, sans-serif;
 }
 a{
     text-decoration: none;
@@ -9,8 +9,6 @@ a{
 img{
     cursor: pointer;
 }
-
-
 
 /*--------------------------------Header Section--------------------------------------*/
 
@@ -47,10 +45,14 @@ nav{
     align-items: center;
 }
 .nav-middle .mic{
-    width: 30px;
+    width: 20px;
     margin-left: 20px;
     border-radius: 50%;
+    padding: 5px 5px;
     background-color: rgb(215, 215, 217);
+}
+.nav-middle .mic:hover{
+    background-color: rgba(176, 176, 180, 0.937);
 }
 .nav-middle button{
     height: 32px;
@@ -112,7 +114,6 @@ nav{
     background: rgb(188, 244, 241);
 }
 
-
 /*----------------------------------SideBar Section------------------------------*/
 
 .sidebar{
@@ -121,6 +122,10 @@ nav{
     position: fixed;
     overflow-y: scroll;
     overflow-x: hidden;
+}
+.sidebar-small{
+    width: 3%;
+    height: 30%;
 }
 .sidebar::-webkit-scrollbar{
     width: 8px;
@@ -139,9 +144,19 @@ nav{
 .sidebar a{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: fit-content;
-    margin: 20px 15px;
+    justify-content: flex-start;
+    width: 180px;
+    height: 30px;
+    margin: 5px 5px;
+    padding:5px 10px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+.sidebar a:first-child{
+    background-color: rgba(154, 153, 153, 0.682);
+}
+.sidebar a:hover{
+    background-color: rgba(154, 153, 153, 0.682);
 }
 .sidebar a img{
     width: 20px;
@@ -159,12 +174,12 @@ nav{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 80px;
-    height: 30px;
+    width: 60px;
+    height: 20px;
     border: 1px solid;
     border-color: rgb(171, 171, 173);
     box-shadow: none;
-    border-radius: 15px;
+    border-radius: 20px;
     color: blue;
 }
 .sidebar .sign-side a:hover{
@@ -203,6 +218,12 @@ nav{
     border: none;
     border-radius: 10px;
 }
+.category button:first-child{
+    background-color: rgba(154, 153, 153, 0.682);
+}
+.category button:hover{
+    background-color: rgba(154, 153, 153, 0.682);
+}
 
 .banner{
     margin-left:15% ;
@@ -216,11 +237,13 @@ nav{
 
 .container{
     margin-left: 15%;
-    width: fit-content;
+    width: 84%;
+    flex-wrap: wrap;
 }
 .video-card{
-    padding-left: 10px;
-    padding-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 15px;
     width:22% ;
 }
 .video-card .thumbnail{
@@ -235,15 +258,17 @@ nav{
 }
 .video-card .user-icon{
     margin-top: 10px;
-    width:50px;
-    height: 50px;
+    width:40px;
+    height: 40px;
     border-radius: 50%;
 }
 .video-card h4{
+    margin-top: 5px;
     margin-left: 25px;
+    padding-bottom: 8px;
 }
 .video-card p{
     font-size: small;
-    margin-left: 75px;
+    margin-left: 65px;
     margin-top: 0;
 }
