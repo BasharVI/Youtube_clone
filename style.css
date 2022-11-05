@@ -191,7 +191,7 @@ nav{
 }
 .sidebar hr{
     width: 100%;
-    height: 0;
+    border: .25px solid rgba(229, 230, 231, 0.852);
     color: rgba(225, 228, 231, 0.973);
 }
 .sidebar h3{
